@@ -1,9 +1,10 @@
 import os
 import re
 
+#This deletes all of the .json file in a directory
 
 def delete_json_files(directory):
-    pattern = re.compile(r'.*\.json$')
+    pattern = re.compile(r'.*\.json$') #change the .json to whatever type you want to delete
     
     for root, subdir, files in os.walk(directory): #depends on how your directory is structured
         
